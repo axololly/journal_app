@@ -36,3 +36,4 @@ lib/story.md
 test/
 *.sql
 .gitignore
+*.py

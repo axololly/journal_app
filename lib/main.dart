@@ -1,34 +1,15 @@
 import 'package:flutter/material.dart';
 import 'app.dart';
 import 'package:window_manager/window_manager.dart';
-
-/*
-import 'package:bitsdojo_window/bitsdojo_window.dart';
-
-void main() {
-  runApp(const App());
-
-  doWhenWindowReady(() {
-    final win = appWindow;
-    const initialSize = Size(600, 450);
-
-    win.minSize = initialSize;
-    win.size = initialSize;
-    
-    win.alignment = Alignment.center;
-    
-    win.show();
-  });
-}
-*/
+import 'loader.dart';
 
 void main() async {
   // Setup
   WidgetsFlutterBinding.ensureInitialized();
   await windowManager.ensureInitialized();
 
-  await windowManager
-    .waitUntilReadyToShow()
+  // Preparing the window manager
+  await windowManager.waitUntilReadyToShow()
     .then((_) async {
       // Hide the title bar
       await windowManager.setTitleBarStyle(TitleBarStyle.hidden);
@@ -40,6 +21,12 @@ void main() async {
       await windowManager.show();
     }
   );
+
+  // Load the journal entries
+  Loader.init();
+
+  print("${Loader.entries}");
   
+  // Run the app
   runApp(const App());
 }
