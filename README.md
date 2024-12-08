@@ -1,16 +1,19 @@
-# journal_app
+# Melon Slice: a Journal App made with Flutter.
 
-A new Flutter project.
+I decided, after two days of working on this project, it was finally a good time to open a repository so I can keep track of the progress I have on this project.
 
-## Getting Started
+> :hammer_and_wrench: This project is Windows only!
 
-This project is a starting point for a Flutter application.
+## Progress Update
 
-A few resources to get you started if this is your first Flutter project:
+Currently, all I have is a custom title bar, and I've started work on creating the sidebar with the entries. Eventually, I'll use `flutter_quill`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Visual Schema
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+If you want to see my blueprint for this project, just take a look [here](https://www.figma.com/design/HXNveuNYguBTzNpDMvbdP5/i-hate-UI-design-%5BDiary-UI-5%5D?node-id=5-106&t=1IjUcqhWIWiHZ7J2-1) at this Figma page - this is my entire design. It would be interesting to get some feedback, but that is where it is now.
+
+## Thanks
+
+Thank you to the (unofficial) Flutter Discord server and its members for continuing to be so helpful. You can join their server [here](https://discord.gg/rflutterdev).
+
+That's all for now. :thumbsup:
